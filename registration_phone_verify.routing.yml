@@ -1,0 +1,15 @@
+registration_phone_verify.verify:
+  path: '/registration-phone-verify/verify'
+  defaults:
+    _title: 'Registration Phone Verify'
+    _form: '\Drupal\registration_phone_verify\Form\VerificationForm'
+  requirements:
+    _permission: 'access content'
+
+registration_phone_verify.settings_form:
+  path: '/admin/config/system/twilio-otp-verify'
+  defaults:
+    _title: 'Twilio phone verify settings'
+    _form: 'Drupal\registration_phone_verify\Form\SettingsForm'
+  requirements:
+    _permission: 'administer registration_phone_verify configuration'

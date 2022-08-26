@@ -1,0 +1,6 @@
+registration_phone_verify.settings_form:
+  title: Twilio Configure
+  description: Twilio configuration for SMS verification.
+  parent: system.admin_config_system
+  route_name: registration_phone_verify.settings_form
+  weight: 10

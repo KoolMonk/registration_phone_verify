@@ -1,0 +1,16 @@
+services:
+    registration_phone_verify.send_sms:
+      class: Drupal\registration_phone_verify\Service\SmsService
+      arguments: [ "@registration_phone_verify.twilio" ]
+
+    registration_phone_verify.verification_code:
+      class: Drupal\registration_phone_verify\Service\VerificationCodeService
+      arguments: [ "@database", "@current_user" ]
+
+    registration_phone_verify.twilio:
+      class: Drupal\registration_phone_verify\Service\Gateway\TwilioGateway
+
+    registration_phone_verify.http_middleware:
+      class: Drupal\registration_phone_verify\RedirectMiddleware
+      tags:
+        - { name: http_middleware }

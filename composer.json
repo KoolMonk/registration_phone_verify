@@ -1,0 +1,17 @@
+{
+    "name": "drupal/registration_phone_verify",
+    "description": "This module is using twilio otp for registration phone verify by sending sms message.",
+    "type": "drupal-custom-module",
+    "version": "1.0",
+    "require": {
+        "drupal/key": "^1.0",
+        "twilio/sdk": "^6"
+    },
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Khurram",
+            "email": "khurramncit@gmail.com"
+        }
+    ]
+}

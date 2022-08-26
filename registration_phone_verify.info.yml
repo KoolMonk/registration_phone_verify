@@ -1,0 +1,6 @@
+name: Registration Phone Verify
+type: module
+description: One time verification of user's phone number by sms on user registration, using twilio
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
